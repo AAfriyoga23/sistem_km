@@ -7,7 +7,7 @@ class Auth extends CI_Controller
         $this->load->view('template_administrator/header');
         $this->load->view('administrator/login');
         $this->load->view('template_administrator/footer');
-    } 
+    }
 
     public function proses_login()
     {
@@ -17,6 +17,7 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('password', 'password', 'required', [
             'required' => 'Password wajib diisii!'
         ]);
+
         if ($this->form_validation->run() == false) {
             $this->load->view('template_administrator/header');
             $this->load->view('administrator/login');
@@ -26,7 +27,7 @@ class Auth extends CI_Controller
             $password   = $this->input->post('password');
 
             $user   = $username;
-            $pass   = $password;
+            $pass   = MD5($password);
 
             $cek    = $this->login_model->cek_login($user, $pass);
 
@@ -34,8 +35,8 @@ class Auth extends CI_Controller
 
                 foreach ($cek->result() as $ck) {
                     $sess_data['username']  = $ck->username;
-                    $sess_data['email']  = $ck->email;
-                    $sess_data['level']  = $ck->level;
+                    $sess_data['email']     = $ck->email;
+                    $sess_data['level']     = $ck->level;
 
                     $this->session->set_userdata($sess_data);
                 }

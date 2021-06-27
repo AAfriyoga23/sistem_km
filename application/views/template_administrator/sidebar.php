@@ -24,105 +24,144 @@
                     <span>Dashboard</span></a>
             </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
             <!-- Nav Item - Pages Collapse Wiki -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWiki" aria-expanded="true" aria-controls="collapseWiki">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKnowledge" aria-expanded="true" aria-controls="collapseKnowledge">
                     <i class="fab fa-wikipedia-w"></i>
+                    <span>Knowledge</span>
+                </a>
+                <div id="collapseKnowledge" class="collapse" aria-labelledby="headingKnowledge" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Knowledge:</h6>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/jurusan') ?>">Jurusan</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/wiki') ?>">Wiki</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/forum') ?>">Forum</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/dokumen') ?>">Dokumen</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/note') ?>">Note Of Meeting</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/lesson') ?>">Lesson Learned</a>
+                        <a class="collapse-item" href="<?php echo base_url('administrator/event') ?>">Event</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Wiki -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseWiki" aria-expanded="true"
+                    aria-controls="collapseWiki">
+                    <i class="fas fa-fw fa-cog"></i>
                     <span>Wiki</span>
                 </a>
-                <div id="collapseWiki" class="collapse" aria-labelledby="headingWiki" data-parent="#accordionSidebar">
+                <div id="collapseWiki" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Wiki:</h6>
-                        <a class="collapse-item" href="#">Article List</a>
-                        <a class="collapse-item" href="#">My Article List</a>
-                        <a class="collapse-item" href="#">Add New Article</a>
-                        <a class="collapse-item" href="#">Categories</a>
+                        <a class="collapse-item" href="buttons.html">Add New Article</a>
+                        <a class="collapse-item active" href="cards.html">Kategori</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Pages Collapse Forum -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForum" aria-expanded="true" aria-controls="collapseForum">
-                    <i class="fas fa-users"></i>
-                    <span>Forum</span>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
                 </a>
-                <div id="collapseForum" class="collapse" aria-labelledby="headingForum" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Forum:</h6>
-                        <a class="collapse-item" href="#">Thread List</a>
-                        <a class="collapse-item" href="#">My Thread List</a>
-                        <a class="collapse-item" href="#">Add New Thread</a>
-                        <a class="collapse-item" href="#">Categories</a>
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item active" href="cards.html">Cards</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Pages Collapse Dokumen -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDokumen" aria-expanded="true" aria-controls="collapseDokumen">
-                    <i class="fas fa-folder-open"></i>
-                    <span>Document</span>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
                 </a>
-                <div id="collapseDokumen" class="collapse" aria-labelledby="headingDokumen" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Document:</h6>
-                        <a class="collapse-item" href="#">Document List</a>
-                        <a class="collapse-item" href="#">My Document List</a>
-                        <a class="collapse-item" href="#">Upload Document</a>
-                        <a class="collapse-item" href="#">Categories</a>
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item active" href="cards.html">Cards</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Pages Collapse Note -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNote" aria-expanded="true" aria-controls="collapseNote">
-                    <i class="fas fa-file-signature"></i>
-                    <span>Note Of Meeting</span>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
                 </a>
-                <div id="collapseNote" class="collapse" aria-labelledby="headingNote" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Note:</h6>
-                        <a class="collapse-item" href="#">Note List</a>
-                        <a class="collapse-item" href="#">My Note List</a>
-                        <a class="collapse-item" href="#">Upload Note</a>
-                        <a class="collapse-item" href="#">Categories</a>
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item active" href="cards.html">Cards</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Pages Collapse Lesson -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLesson" aria-expanded="true" aria-controls="collapseLesson">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <span>Lesson Learned</span>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
                 </a>
-                <div id="collapseLesson" class="collapse" aria-labelledby="headingLesson" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Forum:</h6>
-                        <a class="collapse-item" href="#">Topic List</a>
-                        <a class="collapse-item" href="#">My Topic List</a>
-                        <a class="collapse-item" href="#">Add New Topic</a>
-                        <a class="collapse-item" href="#">Categories</a>
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item active" href="cards.html">Cards</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Pages Collapse Event -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEvent" aria-expanded="true" aria-controls="collapseEvent">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>Event</span>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
                 </a>
-                <div id="collapseEvent" class="collapse" aria-labelledby="headingEvent" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Forum:</h6>
-                        <a class="collapse-item" href="#">Event List</a>
-                        <a class="collapse-item" href="#">My Event List</a>
-                        <a class="collapse-item" href="#">Add New Event</a>
-                        <a class="collapse-item" href="#">Enrolled Event</a>
-                        <a class="collapse-item" href="#">Categories</a>
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item active" href="cards.html">Cards</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
+                </a>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item active" href="cards.html">Cards</a>
                     </div>
                 </div>
             </li>
@@ -134,15 +173,15 @@
                     <span>Verify Knowledge</span></a>
             </li>
 
+            <!-- Nav Item - Verify -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-comments"></i>
+                    <span>Chat</span></a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Nav Item - Logout -->
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('administrator/auth/logout') ?>">
-                    <i class="fas fa-fw fa-sign-out-alt"></i>
-                    <span>Logout</span></a>
-            </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -327,7 +366,7 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="<?php echo base_url('administrator/auth/logout') ?>">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
